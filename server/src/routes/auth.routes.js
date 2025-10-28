@@ -8,5 +8,5 @@ const validator = require('../middleware/validator.middleware')
 routes.post('/register', validator.registerUserValidationRules ,authController.registerController)
 routes.post('/login',authController.loginController)
 routes.post('/logout',authController.logoutController)
-//prompt api's
+
 module.exports = routes

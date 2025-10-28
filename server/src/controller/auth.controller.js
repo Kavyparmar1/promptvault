@@ -46,6 +46,8 @@ async function loginController(req,res) {
             message:"password invalid"
         })
     }
+    const token = jwt.sign({id:userExist._id},process.env.JWT_SEC_KEY)
+ res.cookie("token",token)
    return res.status(200).json({
     message:"Login succesfully",
     user:userExist
