@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@font-face {
+  font-family: dashFont;
+  src: url('/KronaOne-Regular.ttf')   ;
+}
+
+.hero:hover{
+  background-color: #5D6253;
+}
+
+.hero:active{
+  scale: 0.95;
+  transition: 0.2s;
+}
+/* 🧩 Base Calendar Style */
+.react-calendar {
+  height: 100%;
+  width: 100%;
+
+  background-color: #cdcdcd; /* match your dashboard */
+  border: none !important;
+  border-radius: 10px;
+  font-family: dashFont, sans-serif;
+  color: black !important;
+  
+}
+
+/* 🗓️ Month and Year Header */
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.react-calendar__navigation button {
+  color: black !important;
+  background: transparent !important;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+
+
+/* 🧭 Weekday Labels (Mon, Tue, etc.) */
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #A1A1A3 !important;
+}
+
+/* 🧮 Days (Date Numbers) */
+.react-calendar__month-view__days__day {
+  color: black !important;
+  
+}
+
+.react-calendar__tile {
+  border-radius: 10px;
+}
+
+/* ✅ Today's Date Highlight */
+
+/* 🟥 Active (Selected) Date */
+.react-calendar__tile--active {
+  background: #B4C4D2 !important;
+  color:#0088FF !important;
+  
+
+}
+
+/* Hover effect for all tiles */
