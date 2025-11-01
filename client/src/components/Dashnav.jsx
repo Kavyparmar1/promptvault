@@ -11,7 +11,7 @@
   const Dash = () => {
     return (
       <>
-        <div className='h-screen relative w-[20%] bg-[#2C2C2C] flex items-center justify-start flex-col text-[#7A7A7A] gap-5  '>
+        <div className='h-screen fixed bottom-0 w-[20%] bg-[#2C2C2C] flex items-center justify-start flex-col text-[#7A7A7A] gap-5  '>
               <div className='text-white font-[dashFont2] mt-2 h-10 w-full border-b-2 border-[#E8ED25] flex  items-center justify-center text-2xl'><h1>Prompt Vault</h1></div>
               <div className=' mt-7 text-white font-[dashFont] h-10 w-full  flex items-center justify-center text-2xl'>
                   <NavLink to='/dashboard' className={({isActive})=>`${isActive?'text-[#E6EC2A]':'text-[#737373]'} font-[DashFont] text-xl flex items-center gap-2`}> <MdDashboard />Dashboard</NavLink>
