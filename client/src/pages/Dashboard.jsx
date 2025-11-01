@@ -1,10 +1,10 @@
 import React from 'react'
-import Dash from '../components/Dash'
+import Dashhero from '../components/Dashhero'
 
 const Dashboard = () => {
   return (
-    <div className='h-screen w-full bg-[#5D6253] px-20 flex items-center justify-between'>
-        <Dash />
+    <div className='h-screen w-[80%]    bg-[#F7F7F7]'>
+        <Dashhero />
     </div>
   )
 }
