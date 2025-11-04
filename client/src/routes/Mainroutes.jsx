@@ -15,6 +15,7 @@ const Mainroutes = () => {
           
            <Route path='/dashboard' element={<Dashboard/> } />
            <Route path='/prompts' element={<Promptme/> } />
+           
            <Route path='/edit' element={<Prompt/> } />
            <Route path='/ai' element={<Ai/> } />
            <Route path='/setting' element={<Setting/> } />
