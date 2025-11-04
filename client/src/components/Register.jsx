@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {OrbitProgress} from 'react-loading-indicators'
 import axios from 'axios'
 const Register = () => {
     const [name, setname] = useState('')
@@ -66,7 +67,7 @@ setTimeout(() => {
               onChange={(e)=>setpassword(e.target.value)}
               className='bg-zinc-800 text-white rounded-xl px-20 py-2 outline-none ' type="password" placeholder='Password' />
               <button onClick={submitHandler} className='px-14 py-2 rounded-xl rounded bg-blue-500'>
-              {loading ? 'Submitting...' : 'Submit'}
+              {loading ? <OrbitProgress variant="spokes" dense color="#000000" size="small" text="" textColor="#000000" /> : 'Submit'}
               </button>
             </form>
     </div>
