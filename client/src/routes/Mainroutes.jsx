@@ -6,6 +6,7 @@ import Prompt from '../Pages/Prompt'
 import Ai from '../Pages/Ai'
 import Setting from '../Pages/Setting'
 import Register from '../components/Register'
+import Login from '../components/Login'
 
 
 
@@ -20,6 +21,7 @@ const Mainroutes = () => {
            <Route path='/edit' element={<Prompt/> } />
            <Route path='/ai' element={<Ai/> } />
            <Route path='/setting' element={<Setting/> } />
+           <Route path='/login' element={<Login />} />
           
        </Routes>
     </>
